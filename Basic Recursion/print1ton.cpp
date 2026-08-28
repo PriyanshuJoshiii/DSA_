@@ -1,19 +1,18 @@
 #include <iostream>
 using namespace std;
-int c = 1;
-void print(int n)
+void print(int i, int n)
 {
-    if (c > n)
+    if (i > n)
         return;
-    cout << c << endl;
-    c++;
-    print(n);
+    cout << i << endl;
+    i++;
+    print(i, n);
     return;
 }
 int main()
 {
     int n;
     cin >> n;
-    print(n);
+    print(1, n);
     return 0;
 }

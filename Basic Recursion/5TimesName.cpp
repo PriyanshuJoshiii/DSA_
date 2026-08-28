@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
-int c = 1;
-void print(string s)
+void print(int i,string s)
 {
-    if (c > 5)
+    if (i > 5)
         return;
-    cout << c << ".)" << s << endl;
-    c++;
-    print(s);
+    cout << i << ".)" << s << endl;
+    i++;
+    print(i,s);
     return;
 }
 int main()
 {
-    print("Priyanshu");
+    print(1,"Priyanshu");
     return 0;
 }
